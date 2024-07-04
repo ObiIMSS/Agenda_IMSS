@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="task-manager">
+        <h1>Mis Tareas</h1>
+        <input type="text" id="task-input" placeholder="Añade una nueva tarea aquí...">
+        <input type="date" id="task-date">
+        <!-- Selector de prioridad para la tarea -->
+        <select id="task-priority">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button id="add-task-btn">Agregar Tarea</button>
+        <div id="filters">
+            <button class="filter-btn" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="completed">Completadas</button>
+            <button class="filter-btn" data-filter="pending">Pendientes</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
